@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BERT’S RESTAURANT | Filipino & Ilokano Cuisine</title>
+<meta name="description" content="BERT’S RESTAURANT — Modern Filipino & Ilokano Cuisine. Good Food • Great Family • Lasting Memories.">
+<style>
+:root{--green:#064b36;--deep:#033526;--gold:#d8aa45;--cream:#f7f0df;--paper:#fffaf0;--ink:#17382c}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,serif}
+nav{position:sticky;top:0;z-index:20;background:rgba(3,53,38,.98);border-bottom:2px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:10px 4%;gap:20px}
+nav img{height:70px;width:145px;object-fit:cover;border-radius:5px}
+nav .links{display:flex;gap:25px;align-items:center}
+nav a{color:#fff8e8;text-decoration:none;font-size:18px}
+.btn{display:inline-block;background:var(--gold);color:#142b22;padding:13px 22px;border-radius:28px;text-decoration:none;font-weight:bold;border:1px solid var(--gold)}
+.hero{min-height:72vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,53,38,.96) 0%,rgba(3,53,38,.78) 45%,rgba(3,53,38,.18) 100%),url("authentic-ilokano-cuisine.png") center/cover}
+.hero-inner{max-width:850px;padding:70px 7%;color:white}
+.hero h1{font-size:68px;margin:10px 0;color:#f0c85c;letter-spacing:2px}
+.hero h2{font-size:28px;letter-spacing:7px;margin:0 0 20px}
+.hero p{font-size:21px;line-height:1.65}
+section{max-width:1200px;margin:auto;padding:70px 22px}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:45px;margin:0 0 10px;color:var(--green)}
+.heading p{font-size:18px}
+.band{background:var(--deep);color:white;max-width:none;padding:70px 5%}
+.band .heading h2{color:#f0c85c}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid #d8c27d;border-radius:16px;overflow:hidden;box-shadow:0 7px 22px rgba(0,0,0,.08)}
+.card img{width:100%;height:220px;object-fit:cover;display:block;background:#ddd}
+.card .body{padding:18px}
+.card h3{margin:0 0 8px;color:var(--green);font-size:23px}
+.price{color:#a87917;font-weight:bold;font-size:20px}
+.card p{line-height:1.5;margin:9px 0}
+.meta{font-size:14px;color:#6b675d;border-top:1px solid #ddd2b7;padding-top:10px}
+.recipe{margin-top:12px;background:#f0ead9;border-radius:9px;padding:10px}
+details summary{cursor:pointer;font-weight:bold;color:var(--green)}
+.menu-section{margin-bottom:55px}
+.menu-title{background:var(--green);color:#fff;padding:14px 18px;border-radius:13px;border:2px solid var(--gold);font-size:28px;margin-bottom:18px}
+.two{grid-template-columns:repeat(2,1fr)}
+.qr{text-align:center}
+.qr img{width:210px;height:210px;padding:10px;background:white;border-radius:10px}
+footer{background:#032e21;color:white;text-align:center;padding:45px 20px}
+footer h2{color:#f0c85c}
+@media(max-width:850px){.grid,.two{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:48px}nav .links{gap:12px}nav a{font-size:15px}}
+@media(max-width:600px){nav img{width:110px;height:58px}.links a:nth-child(3),.links a:nth-child(4){display:none}.grid,.two{grid-template-columns:1fr}.hero{min-height:78vh}.hero-inner{padding:45px 6%}.hero h1{font-size:42px}.hero h2{font-size:20px;letter-spacing:4px}.hero p{font-size:17px}.heading h2{font-size:35px}.card img{height:210px}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home"><img src="berts-logo.jpg" alt="BERT’S Restaurant logo"></a>
+<div class="links">
+<a href="#home">Home</a><a href="#menu">Menu</a><a href="#ilokano">Ilokano</a><a href="#about">About</a>
+</div>
+<a class="btn" href="#menu">View Menu</a>
+</nav>
+
+<header class="hero" id="home">
+<div class="hero-inner">
+<h1>BERT’S</h1><h2>RESTAURANT</h2>
+<p><em>Good Food • Great Family • Lasting Memories</em></p>
+<p><strong>Modern Filipino & Ilokano Cuisine</strong><br>
+A taste of our roots, a table for your story. Enjoy heritage dishes, local flavors, and contemporary presentation in a warm family dining experience.</p>
+<a class="btn" href="#menu">EXPLORE OUR MENU →</a>
+</div>
+</header>
+
+<section id="menu">
+<div class="heading">
+<h2>OUR ORIGINAL BERT’S MENU</h2>
+<p>Your first BERT’S menu collection — signature dishes, suggested prices, descriptions, calories and origins.</p>
+</div>
+
+<div class="menu-section">
+<div class="menu-title">🍽️ APPETIZERS</div>
+<div class="grid two">
+<div class="card"><div class="body"><h3>Bagnet Kare-Kare Bites</h3><span class="price">₱220</span><p>Crispy Ilokano bagnet with peanut sauce and bagoong.</p><div class="meta">Approx. 420 kcal • Ilocos-inspired</div></div></div>
+<div class="card"><div class="body"><h3>Dinakdakan Croquettes</h3><span class="price">₱180</span><p>Creamy dinakdakan filling inside a crispy croquette.</p><div class="meta">Approx. 330 kcal • Ilocos-inspired</div></div></div>
+<div class="card"><div class="body"><h3>Ilokano Lumpia</h3><span class="price">₱160</span><p>Lumpia filled with bagnet, vegetables, and Ilokano aromatics.</p><div class="meta">Approx. 290 kcal • Ilocos / Filipino</div></div></div>
+<div class="card"><div class="body"><h3>Tokwa’t Bagnet</h3><span class="price">₱170</span><p>Crispy tofu and bagnet with a calamansi-soy dressing.</p><div class="meta">Approx. 360 kcal • Filipino / Ilokano-inspired</div></div></div>
+</div></div>
+
+<div class="menu-section">
+<div class="menu-title">🥣 SOUPS</div>
+<div class="grid two">
+<div class="card"><div class="body"><h3>Sinanglaw</h3><span class="price">₱220</span><p>Ilokano beef soup with a refined presentation.</p><div class="meta">Approx. 280 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Tinola sa Tanglad</h3><span class="price">₱180</span><p>Classic tinola enhanced with lemongrass and native herbs.</p><div class="meta">Approx. 230 kcal • Philippines</div></div></div>
+</div></div>
+
+<div class="menu-section">
+<div class="menu-title">🥩 MAIN COURSES</div>
+<div class="grid">
+<div class="card"><div class="body"><h3>Bagnet Ilokano</h3><span class="price">₱350</span><p>Traditional crispy pork belly served with sukang Iloko and vegetables.</p><div class="meta">Approx. 780 kcal • Ilocos Norte</div></div></div>
+<div class="card"><div class="body"><h3>Pinakbet Bagnet</h3><span class="price">₱320</span><p>Ilokano pinakbet topped with crispy bagnet.</p><div class="meta">Approx. 560 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Poqui-Poqui with Grilled Chicken</h3><span class="price">₱280</span><p>Smoky eggplant paired with grilled chicken.</p><div class="meta">Approx. 510 kcal • Ilocos-inspired</div></div></div>
+<div class="card"><div class="body"><h3>Igado BERT’S Style</h3><span class="price">₱300</span><p>Ilokano pork-and-liver dish with modern plating style.</p><div class="meta">Approx. 590 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Longganisa Vigan Rice Bowl</h3><span class="price">₱260</span><p>Vigan longganisa with garlic rice, egg and pickled vegetables.</p><div class="meta">Approx. 690 kcal • Vigan / Ilocos Sur</div></div></div>
+<div class="card"><div class="body"><h3>Dinakdakan de Luxe</h3><span class="price">₱320</span><p>Modern plated version of the Ilokano classic.</p><div class="meta">Approx. 540 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Inasal na Liempo with Ilokano Salsa</h3><span class="price">₱300</span><p>Grilled pork belly with a local-style dipping sauce.</p><div class="meta">Approx. 670 kcal • Filipino / Ilokano-inspired</div></div></div>
+</div></div>
+
+<div class="menu-section">
+<div class="menu-title">🌱 VEGETARIAN</div>
+<div class="grid two">
+<div class="card"><div class="body"><h3>Pinakbet Garden Plate</h3><span class="price">₱220</span><p>Seasonal vegetables with bagoong-infused sauce.</p><div class="meta">Approx. 250 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Poqui-Poqui Gratinee</h3><span class="price">₱200</span><p>Creamy baked eggplant inspired by the Ilokano dish.</p><div class="meta">Approx. 320 kcal • Ilocos</div></div></div>
+</div></div>
+
+<div class="menu-section">
+<div class="menu-title">🍮 DESSERTS</div>
+<div class="grid three">
+<div class="card"><div class="body"><h3>Ilocos Empanada Ice Cream</h3><span class="price">₱160</span><p>Ilocos-inspired crisp pastry paired with creamy ice cream.</p><div class="meta">Approx. 390 kcal • Ilocos</div></div></div>
+<div class="card"><div class="body"><h3>Ube-Bibingka Brûlée</h3><span class="price">₱150</span><p>Filipino bibingka flavors with a brûléed topping.</p><div class="meta">Approx. 360 kcal • Philippines</div></div></div>
+<div class="card"><div class="body"><h3>Suman sa Lihiya with Caramel Latik</h3><span class="price">₱140</span><p>Traditional suman with modern caramel-latik sauce.</p><div class="meta">Approx. 310 kcal • Philippines</div></div></div>
+</div></div>
+
+<div class="menu-section">
+<div class="menu-title">🥤 BEVERAGES</div>
+<div class="grid">
+<div class="card"><div class="body"><h3>Calamansi-Basil Cooler</h3><span class="price">₱120</span><p>Fresh calamansi with basil and soda.</p></div></div>
+<div class="card"><div class="body"><h3>Vigan Cane Vinegar Spritz</h3><span class="price">₱130</span><p>Creative non-alcoholic drink inspired by Ilokano vinegar.</p></div></div>
+<div class="card"><div class="body"><h3>Mango-Sili Iced Tea</h3><span class="price">₱120</span><p>Sweet mango with a subtle chili finish.</p></div></div>
+</div></div>
+</section>
+
+<section class="band" id="ilokano">
+<div class="heading">
+<h2>AUTHENTIC ILOKANO CUISINE</h2>
+<p>A larger collection of traditional Northern Filipino dishes. These are additional dishes and do not repeat the original BERT’S menu above.</p>
+</div>
+
+<div class="menu-title">🌿 ILOKANO VEGETABLE & GARDEN COLLECTION</div>
+<div class="grid">
+<div class="card"><img src="dinengdeng-nga-saluyot.jpg" alt="Dinengdeng nga Saluyot"><div class="body"><h3>Dinengdeng nga Saluyot</h3><span class="price">₱180</span><p>Fresh saluyot leaves in a light bagoong-isda broth with grilled or fried fish, tomatoes and onions.</p><div class="meta">Approx. 220 kcal • Ilokano / Northern Philippines</div></div></div>
+<div class="card"><img src="saluyot-with-bagoong.jpg" alt="Saluyot with Bagoong"><div class="body"><h3>Saluyot with Bagoong</h3><span class="price">₱150</span><p>Young saluyot leaves blanched and combined with tomatoes, onions and bagoong isda.</p><div class="meta">Approx. 150 kcal • Ilokano</div></div></div>
+<div class="card"><img src="labong-nga-dinengdeng.jpg" alt="Labong nga Dinengdeng"><div class="body"><h3>Labong nga Dinengdeng</h3><span class="price">₱170</span><p>Tender bamboo shoots simmered with bagoong isda, tomatoes, onions and seasonal vegetables.</p><div class="meta">Approx. 170 kcal • Ilokano</div></div></div>
+<div class="card"><img src="labong-at-saluyot.jpg" alt="Labong at Saluyot"><div class="body"><h3>Labong at Saluyot</h3><span class="price">₱170</span><p>Tender bamboo shoots and saluyot cooked with fermented fish seasoning.</p><div class="meta">Approx. 160 kcal • Ilokano</div></div></div>
+<div class="card"><img src="dinengdeng.jpg" alt="Dinengdeng"><div class="body"><h3>Dinengdeng</h3><span class="price">₱180</span><p>Mixed vegetables and grilled fish simmered in a savory bagoong-isda broth.</p><div class="meta">Approx. 230 kcal • Ilokano</div></div></div>
+<div class="card"><img src="inabraw.jpg" alt="Inabraw"><div class="body"><h3>Inabraw</h3><span class="price">₱160</span><p>Ilokano vegetables cooked in a simple bagoong-based broth, highlighting natural vegetable flavors.</p><div class="meta">Approx. 180 kcal • Ilokano</div></div></div>
+<div class="card"><img src="pinakbet-ilokano.jpg" alt="Pinakbet Ilokano"><div class="body"><h3>Pinakbet Ilokano</h3><span class="price">₱180</span><p>Ampalaya, eggplant, okra, squash, string beans and other vegetables cooked with bagoong isda.</p><div class="meta">Approx. 260 kcal • Ilokano</div></div></div>
+<div class="card"><img src="kbl-ilokano-style.jpg" alt="KBL Ilokano Style"><div class="body"><h3>KBL Ilokano Style</h3><span class="price">₱220</span><p>Pork and vegetables prepared in an Ilokano-inspired style.</p><div class="meta">Approx. 430 kcal • Ilokano-inspired</div></div></div>
+<div class="card"><img src="ginisang-labong.jpg" alt="Ginisang Labong"><div class="body"><h3>Ginisang Labong</h3><span class="price">₱160</span><p>Young bamboo shoots sautéed with garlic, onion, tomatoes and traditional seasonings.</p><div class="meta">Approx. 190 kcal • Ilokano</div></div></div>
+<div class="card"><img src="lupo-nga-saluyot.jpg" alt="Lupo nga Saluyot"><div class="body"><h3>Lupo nga Saluyot</h3><span class="price">₱150</span><p>Tender saluyot prepared simply with tomatoes, onions and fermented fish seasoning.</p><div class="meta">Approx. 140 kcal • Ilokano</div></div></div>
+</div>
+
+<div class="menu-title" style="margin-top:45px">🐟 ILOKANO FISH & SEAFOOD</div>
+<div class="grid">
+<div class="card"><img src="dinengdeng-nga-may-inihaw-na-isda.jpg" alt="Dinengdeng with Grilled Fish"><div class="body"><h3>Dinengdeng nga May Inihaw nga Bangus</h3><span class="price">₱220</span><p>Vegetables and grilled bangus in a savory bagoong-isda broth.</p></div></div>
+<div class="card"><img src="dinengdeng-nga-tilapia.jpg" alt="Dinengdeng nga Tilapia"><div class="body"><h3>Dinengdeng nga Tilapia</h3><span class="price">₱220</span><p>Tilapia served with traditional Ilokano vegetable broth.</p></div></div>
+<div class="card"><img src="inabraw-nga-may-inihaw-nga-isda.jpg" alt="Inabraw with Grilled Fish"><div class="body"><h3>Inabraw nga May Inihaw nga Isda</h3><span class="price">₱230</span><p>Simple vegetable inabraw paired with grilled fish.</p></div></div>
+<div class="card"><img src="pinapaitan-nga-isda.jpg" alt="Pinapaitan nga Isda"><div class="body"><h3>Pinapaitan nga Isda</h3><span class="price">₱220</span><p>A strongly flavored fish soup with a distinct savory-bitter profile.</p></div></div>
+<div class="card"><img src="inihaw-na-bangus-with-sukang-iloko.jpg" alt="Grilled Bangus"><div class="body"><h3>Inihaw na Bangus with Sukang Iloko</h3><span class="price">₱280</span><p>Grilled bangus served with Ilokano vinegar.</p></div></div>
+<div class="card"><img src="daing-nga-isda.jpg" alt="Daing nga Isda"><div class="body"><h3>Daing nga Isda</h3><span class="price">₱190</span><p>Sun-dried fish, pan-fried and served with traditional accompaniments.</p></div></div>
+<div class="card"><img src="paksiw-nga-isda.jpg" alt="Paksiw nga Isda"><div class="body"><h3>Paksiw nga Isda</h3><span class="price">₱190</span><p>Fish cooked in vinegar, garlic and seasonings.</p></div></div>
+<div class="card"><img src="sarabasab-nga-isda.jpg" alt="Sarabasab nga Isda"><div class="body"><h3>Sarabasab nga Isda</h3><span class="price">₱190</span><p>Fish cooked with tomatoes, onions and fermented fish flavors.</p></div></div>
+</div>
+
+<div class="menu-title" style="margin-top:45px">🐐 ILOKANO SOUPS & HERITAGE SPECIALS</div>
+<div class="grid">
+<div class="card"><img src="papaitan.jpg" alt="Papaitan"><div class="body"><h3>Papaitan</h3><span class="price">₱220</span><p>Strongly flavored Ilokano soup traditionally made with goat or beef offal and a characteristic bitter broth.</p></div></div>
+<div class="card"><img src="pinapaitan-nga-kambing.jpg" alt="Pinapaitan nga Kambing"><div class="body"><h3>Pinapaitan nga Kambing</h3><span class="price">₱250</span><p>Traditional goat-based papaitan with a distinctly bitter and savory broth.</p></div></div>
+<div class="card"><img src="lauya-ilokano.jpg" alt="Lauya Ilokano"><div class="body"><h3>Lauya Ilokano</h3><span class="price">₱200</span><p>A hearty soup with meat, vegetables and native seasonings.</p></div></div>
+<div class="card"><img src="utak-utek-nga-sabaw.jpg" alt="Utak-utek nga Sabaw"><div class="body"><h3>Utak-utek nga Sabaw</h3><span class="price">₱180</span><p>A comforting soup made with mixed vegetables and meat.</p></div></div>
+<div class="card"><img src="sinigang-nga-isda.jpg" alt="Sinigang nga Isda"><div class="body"><h3>Sinigang nga Isda</h3><span class="price">₱200</span><p>Fish in a sour and savory broth with native vegetables.</p></div></div>
+</div>
+
+<div class="menu-title" style="margin-top:45px">🐷 ILOKANO PORK SPECIALTIES</div>
+<div class="grid">
+<div class="card"><div class="body"><h3>Bagnet</h3><span class="price">₱350</span><p>Crispy deep-fried pork belly served with sukang Iloko.</p></div></div>
+<div class="card"><div class="body"><h3>Dinakdakan</h3><span class="price">₱320</span><p>Grilled pork parts mixed with onions, chili, vinegar and a creamy dressing.</p></div></div>
+<div class="card"><div class="body"><h3>Igado</h3><span class="price">₱300</span><p>Pork, liver and vegetables cooked with vinegar, soy sauce, garlic and pepper.</p></div></div>
+<div class="card"><div class="body"><h3>Poqui-Poqui</h3><span class="price">₱220</span><p>Grilled eggplant with eggs, tomatoes and onions.</p></div></div>
+<div class="card"><div class="body"><h3>Longganisa Vigan</h3><span class="price">₱240</span><p>Garlicky, savory-sweet Ilokano sausage inspired by the traditional Vigan style.</p></div></div>
+</div>
+</section>
+
+<section id="about">
+<div class="heading"><h2>ABOUT BERT’S</h2><p>BERT’S RESTAURANT celebrates Filipino and Ilokano culinary heritage through authentic local flavors, creative presentation, and a welcoming modern family dining experience.</p></div>
+<div class="qr">
+<img src="BERTS_QR_CODE.png" alt="BERT’S Restaurant QR code">
+<p><strong>SCAN FOR OUR FULL MENU</strong></p>
+<p><em>Good Food • Great Family • Lasting Memories</em></p>
+</div>
+</section>
+
+<footer>
+<h2>BERT’S RESTAURANT</h2>
+<p>Modern Filipino & Ilokano Cuisine</p>
+<p>🇵🇭 Proudly Filipino. Truly Ilokano.</p>
+<p>Good Food • Great Family • Lasting Memories</p>
+</footer>
+</body>
+</html>
